@@ -1,0 +1,38 @@
+version 3
+run General-0-20251030-12:36:11-7612
+attr configname General
+attr datetime 20251030-12:36:11
+attr datetimef 20251030-123611
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SmartDHCPNetwork
+attr processid 7612
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network SmartDHCPNetwork
+config sim-time-limit 100s
+config *.numClients 4
+config *.clients[0].deviceType "\"IoT\""
+config *.clients[1].deviceType "\"Desktop\""
+config *.clients[2].deviceType "\"Admin\""
+config *.clients[3].deviceType "\"NewIoT\""
+
+par SmartDHCPNetwork.server typename "\"smartdhcp.DHCPServer\""
+par SmartDHCPNetwork.clients[0] typename "\"smartdhcp.DHCPClient\""
+par SmartDHCPNetwork.clients[0] deviceType "\"IoT\""
+par SmartDHCPNetwork.clients[1] typename "\"smartdhcp.DHCPClient\""
+par SmartDHCPNetwork.clients[1] deviceType "\"Desktop\""
+par SmartDHCPNetwork.clients[2] typename "\"smartdhcp.DHCPClient\""
+par SmartDHCPNetwork.clients[2] deviceType "\"Admin\""
+par SmartDHCPNetwork.clients[3] typename "\"smartdhcp.DHCPClient\""
+par SmartDHCPNetwork.clients[3] deviceType "\"NewIoT\""
+par SmartDHCPNetwork typename "\"smartdhcp.SmartDHCPNetwork\""
+par SmartDHCPNetwork numClients 4
+
