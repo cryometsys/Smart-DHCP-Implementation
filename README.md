@@ -35,8 +35,8 @@ The project was built entirely in **OMNeT++** without using any external framewo
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/SmartDHCP.git
-   cd SmartDHCP
+   git clone https://github.com/cryometsys/Smart-DHCP-Implementation.git
+   cd Smart-DHCP-Implementation
    ```
 2. **Build the project**
     ```bash
